@@ -4,11 +4,11 @@
 
 #include <pthread.h>
 
-void* function() {
+void* function() { // function that threads will be calling
 
 	printf("Thread spawned\n");
 
-	sleep(10);
+	sleep(10); // give the function something to do
 }
 
 int main(int argc, char *argv[]){
@@ -21,12 +21,12 @@ int main(int argc, char *argv[]){
 
 	pthread_t thread_id;
 
-	for(int i = 0; i < atoi(argv[1]); i++) {
+	for(int i = 0; i < atoi(argv[1]); i++) { // spawn number of threads based on argv[1]
 
 	pthread_create(&thread_id, NULL, &function, NULL);
 	}
 
-	pthread_join(thread_id, NULL);
+	pthread_join(thread_id, NULL); // join last thread and return and exit program cleanly after it completes
 
 	return 0;
 }
