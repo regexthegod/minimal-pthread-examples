@@ -4,6 +4,7 @@ These are minimal pthreads examples.
 ## Contents
 
 `timer.c` in an example of pthreading managed by looping inside of the main thread until completion
+
 `join.c` is an example of pthreading managed by joining a thread from the main thread until completion
 
 ## Instructions
