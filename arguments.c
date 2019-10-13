@@ -13,10 +13,10 @@ struct arg_struct { // declare structure containing our arguments
 
 void* function(void *arguments) { // function that threads will be calling
 	struct arg_struct *args = arguments; 
-
-	printf("Thread spawned with arguments: %i, %i, %i, %i\n", args->arg1, args->arg2, args->arg3, args->arg4);
-	sleep(10); // give the function something to do
 	
+	printf("Thread spawned with arguments: %i, %i, %i, %i\n", args->arg1, args->arg2, args->arg3, args->arg4);
+	
+	sleep(10); // give the function something to do	
 	return NULL;
 }
 
@@ -45,8 +45,6 @@ for(int i = 0; i < atoi(argv[1]); i++) { // spawn number of threads based on arg
 	args.arg2++;
 	args.arg3++;
 	args.arg4++;
-	
-	sleep(1);
 }
 
 	pthread_join(thread_id, NULL); // join last thread then return and exit program cleanly after it completes
