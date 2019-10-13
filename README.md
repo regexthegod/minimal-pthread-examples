@@ -1,5 +1,6 @@
 # minimal-pthreads-examples
 These are minimal pthreads examples.
 
-Save the appropriate example file and compile it using `gcc example.c -o
-example -pthread`.
+## Instructions
+
+Clone the repository using the command `git clone https://github.com/regexthegod/minimal-pthreads-examples.git` and compile everything inside of it using `make`.
