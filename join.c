@@ -7,6 +7,8 @@
 void* function() { // function that threads will be calling
 	printf("Thread spawned\n");
 	sleep(10); // give the function something to do
+	
+	return NULL;
 }
 
 int main(int argc, char *argv[]){
