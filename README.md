@@ -1,5 +1,5 @@
-# minimal-pthreads-examples
-These are minimal pthreads examples.
+# minimal-pthread-examples
+The goal of this repository is to present examples of pthread code in the most minimal of use-cases.
 
 ## Contents
 
