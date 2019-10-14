@@ -11,4 +11,4 @@ The goal of this repository is to present examples of pthread code in the most m
 
 ## Instructions
 
-Clone the repository using the command `git clone https://github.com/regexthegod/minimal-pthreads-examples.git` and compile everything inside of it using `make`.
+Clone the repository using the command `git clone https://github.com/regexthegod/minimal-pthread-examples.git` and compile everything inside of it using `make`.
