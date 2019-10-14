@@ -3,7 +3,6 @@
 
 void* function() {
 	printf("Function thread spawned\n");
-	while(1){}
 	return NULL;
 }
 
