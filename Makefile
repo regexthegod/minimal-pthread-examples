@@ -10,4 +10,4 @@ arguments:
 	gcc -o arguments arguments.c -lpthread -Wall
 
 clean:
-	rm -f timer join arguments
+	rm -rf timer join arguments
