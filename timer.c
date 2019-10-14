@@ -16,13 +16,13 @@ void* timer() {
 	while(1) {
 		sleep(1);
 		counter++;
-		if(counter >= 10) 
+		if(counter >= 10)
 			exit(0);
 	}
-return NULL;
+	return NULL;
 }
 
-int main(int argc, char *argv[]) {
+int main() {
 	pthread_t thread;
 	pthread_create(&thread, NULL, &function, NULL);
 	pthread_create(&thread, NULL, &timer, NULL);

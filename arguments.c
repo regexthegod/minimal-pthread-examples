@@ -17,7 +17,7 @@ void* function(void *arguments) {
 	return NULL;
 }
 
-int main(int argc, char *argv[]) {
+int main() {
 	struct arg_struct args;
 	args.arg1 = 0;
 	args.arg2 = 1;
