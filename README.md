@@ -3,9 +3,9 @@ These are minimal pthreads examples.
 
 ## Contents
 
-`join.c` spawns a thread, joining it and blocking the main thread indefinitely
+`join.c` spawns a thread, joining it
 
-`arguments.c` spawns a thread, calling a function with multiple, varying arguments
+`arguments.c` spawns a thread, calling a function with multiple, varying arguments, joining it
 
 `timer.c` spawns two threads, the function thread and a timer thread, joining the timer thread which blocks the main thread and exits the program after 10 seconds elapse
 
