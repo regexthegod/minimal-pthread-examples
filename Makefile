@@ -1,13 +1,13 @@
 all: timer join arguments
 
 timer:
-	gcc -o timer timer.c -lpthread -Wall
+	gcc timer.c -o timer -lpthread -Wall
 
 join:
-	gcc -o join join.c -lpthread -Wall
+	gcc join.c -o join -lpthread -Wall
 
 arguments:
-	gcc -o arguments arguments.c -lpthread -Wall
+	gcc arguments.c -o arguments -lpthread -Wall
 
 clean:
 	rm -rf timer join arguments
