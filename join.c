@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <pthread.h>
 
-pthread_t thread;
-
 void* function() {
 	printf("Function thread spawned\n");
 	while(1){}
@@ -10,6 +8,7 @@ void* function() {
 }
 
 int main(int argc, char* argv[]) {
+	pthread_t thread;
 	pthread_create(&thread, NULL, &function, NULL);
 	pthread_join(thread, NULL);
 	return 0;
