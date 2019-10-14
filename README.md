@@ -3,11 +3,11 @@ These are minimal pthreads examples.
 
 ## Contents
 
-`timer.c` in an example of pthreading, blocked by a timed loop inside of the main thread until completion
+`join.c` spawns a thread, joining it and blocking the main thread indefinitely
 
-`join.c` is an example of pthreading, joining all created threads and blocking the main thread until they complete
+`arguments.c` spawns a thread, calling a function with multiple, varying arguments
 
-`argument.c` is an example of pthreading, calling a function on multiple threads with multiple, varying arguments
+`timer.c` spawns two threads, the function thread and a timer thread, joining the timer thread which blocks the main thread and exits the program after 10 seconds elapse
 
 ## Instructions
 
