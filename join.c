@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <pthread.h>
 
 pthread_t thread;
