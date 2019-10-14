@@ -25,6 +25,6 @@ int main(int argc, char *argv[]) {
 	args.arg4 = 3;
 	pthread_t thread;
 	pthread_create(&thread, NULL, &function, &args);
-	pthread_join(thread);
+	pthread_join(thread, NULL);
 	return 0;
 }
