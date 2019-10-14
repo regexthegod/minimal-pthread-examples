@@ -11,7 +11,7 @@ void* function() {
 }
 
 void* timer() {
-	printf("Timer thread spawned. Waiting 10 seconds then exiting\n\n");
+	printf("Timer thread spawned. Waiting 10 seconds then exiting\n");
 	int counter = 0;
 	while(1) {
 		sleep(1);
