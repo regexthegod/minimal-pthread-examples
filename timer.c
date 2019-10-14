@@ -19,7 +19,7 @@ void* timer() {
 		if(counter >= 10) 
 			exit(0);
 	}
-return NULL;
+	return NULL;
 }
 
 int main(int argc, char *argv[]) {
