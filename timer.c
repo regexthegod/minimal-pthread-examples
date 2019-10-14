@@ -17,7 +17,7 @@ void* timer() {
         sleep(1);
         counter++;
         if(counter >= 10) 
-            exit(1);
+            exit(0);
     }
     return NULL;
 }
