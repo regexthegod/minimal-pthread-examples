@@ -18,12 +18,13 @@ void* function(void *arguments) {
 }
 
 int main(int argc, char *argv[]) {
-	pthread_t thread_id;
 	struct arg_struct args;
 	args.arg1 = 0;
 	args.arg2 = 1;
 	args.arg3 = 2;
 	args.arg4 = 3;
-	pthread_create(&thread_id, NULL, &function, &args);
+	pthread_t thread;
+	pthread_create(&thread, NULL, &function, &args);
+	pthread_join(thread);
 	return 0;
 }
